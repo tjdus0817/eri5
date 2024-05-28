@@ -1,0 +1,27 @@
+manifest 권한 사용 추가할것.
+
+https://1d1cblog.tistory.com/115 - 맵사용방법
+https://1d1cblog.tistory.com/118 - 맵 마커 속성 
+
+
+mainActivity 추가 부분
+
+ @Override
+    public void onMapReady(final GoogleMap googleMap) {
+        mgoogleMap = googleMap;
+
+        final LatLng Pocheon = new LatLng(위도, 경도);   // 마커 추가
+
+        MarkerOptions markerOptions = new MarkerOptions();
+        markerOptions.position(Pocheon);
+        markerOptions.title("제목");                                    // 마커 옵션 추가
+        googleMap.addMarker(markerOptions);                                 // 마커 등록
+
+        googleMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
+            @Override
+            public void onMapLoaded() {
+                mgoogleMap.moveCamera(CameraUpdateFactory.newLatLng(Pocheon));
+                mgoogleMap.animateCamera(CameraUpdateFactory.zoomTo(10));
+            }
+        }); // 구글맵 로딩이 완료되면 카메라 위치 조정
+    }
