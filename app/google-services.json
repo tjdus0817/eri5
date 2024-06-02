@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822909959595",
+    "project_id": "phamacy-4095e",
+    "storage_bucket": "phamacy-4095e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822909959595:android:0b4e7dcde7828412fa26ee",
+        "android_client_info": {
+          "package_name": "com.iri5.medicine_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGjMSr8rmHl2ZKlb5bpWuMUTkAC34mRv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
